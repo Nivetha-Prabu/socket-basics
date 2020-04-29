@@ -19,6 +19,7 @@ socket.on('message', function(message) {
 });
 
 socket.emit('message', {
+	name:'System',
 	text:'server message :welcome to the chat application!',
     timestamp:  moment().valueOf()
 });

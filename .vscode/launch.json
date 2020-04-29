@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\public\\js\\app.js"
+        },
+        {
+            "type": "pwa-node-terminal",
+            "name": "Run Script: test",
+            "request": "launch",
+            "command": "echo \"Error: no test specified\" && exit 1",
+            "cwd": "d:\\sockets"
+        },
+        {
+            "type": "pwa-node",
+            "name": "Run Current File",
+            "request": "launch",
+            "program": "d:\\sockets\\public\\js\\app.js"
+        }
+    ]
+}
