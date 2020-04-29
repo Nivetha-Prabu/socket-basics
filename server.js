@@ -12,17 +12,13 @@ io.on('connection',function(socket) {
 
 socket.on('message', function(message) {
 	console.log('Message received from front-end: ' +message.text);
-    socket.broadcast.emit('message', message);
-
-	// io.emit
+	// socket.broadcast.emit('message', message);
+	io.emit('message', message);
 });
-
-
 
 socket.emit('message', {
 	text:'server message :welcome to the chat application!'
 });
-
 });
 
 http.listen(PORT, function() {
